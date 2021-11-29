@@ -1,0 +1,24 @@
+
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url('../fonts/OpenSans/OpenSans-Regular.ttf');
+  }
+
+body{
+    font-family: Victor Mono Semibold;
+}
+header{
+    width: 850px;
+    margin: 0 auto;
+}
+.worlddata_container{
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid red;
+    margin: 30px 5px;
+    background-color: #EEEE;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
