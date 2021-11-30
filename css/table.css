@@ -1,0 +1,23 @@
+ @font-face {
+    font-family: Victor-Mono-Bold;
+    src: url('../fonts/VictorMono-Bold.ttf');
+  }
+
+table, th, tr, td{
+    border-collapse: collapse;
+    border: 1px solid rgb(202, 202, 202);
+    padding: 5px;
+    text-align: center;
+}
+
+th{
+    font-family: Victor-Mono-Bold;
+}
+
+.container-table1{
+    display: flex;
+    height: 500px;
+    width: 815px;
+    margin: 0 auto;
+    overflow: auto;
+}

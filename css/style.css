@@ -1,0 +1,59 @@
+
+@font-face {
+    font-family: Victor-Mono-Semibold;
+    src: url('../fonts/VictorMono-SemiBold.ttf');
+  }
+
+  @font-face {
+    font-family: Victor-Mono-Bold;
+    src: url('../fonts/VictorMono-Bold.ttf');
+  }
+
+body{
+    font-family: Victor-Mono-Semibold;
+}
+.worlddata_container{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    margin: 10px;
+}
+.text_container{
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.worlddata_container h2{
+    font-size: 15px;
+}
+
+.worlddata_container span{
+    font-size: 30px;
+}
+
+.group__container{
+    width: 320px;
+    height: 120px;
+    margin: 30px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
+}
+
+.group__container img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 15px;
+    left: 55px;
+}
+
+header{
+    font-size: 40px;
+    padding: 20px 40px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+

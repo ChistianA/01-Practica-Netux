@@ -4,162 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table.css">
     <title>Practica Netux</title>
 </head>
 <body>
-    <script src="countries_iso.js"></script>
-    <script src="world_data.js"></script>
+    <script src="js/countries_iso.js"></script>
+    <script src="js/world_data.js"></script>
+    <script src="js/accounting.js"></script>
     <header>
-        <div class="worlddata_container">
-            <h2>Total Cases</h2>
-            <span id="total_cases"></span>
-        </div>
-        <div class="worlddata_container">
-            <h2>Active Cases</h2>
-            <span id="active_cases"></span>
-        </div>
-        <div class="worlddata_container">
-            <h2>Total Deaths</h2>
-            <span id="total_deaths"></span>
-        </div>
-        <div class="worlddata_container">
-            <h2>Total Recovered</h2>
-            <span id="total_recovered"></span>
-        </div>
+        <div>Covid-19 Dashboard</div>
     </header>
-    <div class="container-table100">
-        <div class="wrap-table100">
-            <div class="table100">
-                <table>
-                    <thead>
-                        <tr class="table100-head">
-                            <th class="column1">ISO</th>
-                            <th class="column2">Country</th>
-                            <th class="column3">Total Cases</th>
-                            <th class="column4">Active Cases</th>
-                            <th class="column5">Total Deaths</th>
-                            <th class="column6">Total Recovered</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                            <tr>
-                                <td class="column1">2017-09-29 01:22</td>
-                                <td class="column2">200398</td>
-                                <td class="column3">iPhone X 64Gb Grey</td>
-                                <td class="column4">$999.00</td>
-                                <td class="column5">1</td>
-                                <td class="column6">$999.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-28 05:57</td>
-                                <td class="column2">200397</td>
-                                <td class="column3">Samsung S8 Black</td>
-                                <td class="column4">$756.00</td>
-                                <td class="column5">1</td>
-                                <td class="column6">$756.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-26 05:57</td>
-                                <td class="column2">200396</td>
-                                <td class="column3">Game Console Controller</td>
-                                <td class="column4">$22.00</td>
-                                <td class="column5">2</td>
-                                <td class="column6">$44.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-25 23:06</td>
-                                <td class="column2">200392</td>
-                                <td class="column3">USB 3.0 Cable</td>
-                                <td class="column4">$10.00</td>
-                                <td class="column5">3</td>
-                                <td class="column6">$30.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-24 05:57</td>
-                                <td class="column2">200391</td>
-                                <td class="column3">Smartwatch 4.0 LTE Wifi</td>
-                                <td class="column4">$199.00</td>
-                                <td class="column5">6</td>
-                                <td class="column6">$1494.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-23 05:57</td>
-                                <td class="column2">200390</td>
-                                <td class="column3">Camera C430W 4k</td>
-                                <td class="column4">$699.00</td>
-                                <td class="column5">1</td>
-                                <td class="column6">$699.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-22 05:57</td>
-                                <td class="column2">200389</td>
-                                <td class="column3">Macbook Pro Retina 2017</td>
-                                <td class="column4">$2199.00</td>
-                                <td class="column5">1</td>
-                                <td class="column6">$2199.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-21 05:57</td>
-                                <td class="column2">200388</td>
-                                <td class="column3">Game Console Controller</td>
-                                <td class="column4">$999.00</td>
-                                <td class="column5">1</td>
-                                <td class="column6">$999.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-19 05:57</td>
-                                <td class="column2">200387</td>
-                                <td class="column3">iPhone X 64Gb Grey</td>
-                                <td class="column4">$999.00</td>
-                                <td class="column5">1</td>
-                                <td class="column6">$999.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-18 05:57</td>
-                                <td class="column2">200386</td>
-                                <td class="column3">iPhone X 64Gb Grey</td>
-                                <td class="column4">$999.00</td>
-                                <td class="column5">1</td>
-                                <td class="column6">$999.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-22 05:57</td>
-                                <td class="column2">200389</td>
-                                <td class="column3">Macbook Pro Retina 2017</td>
-                                <td class="column4">$2199.00</td>
-                                <td class="column5">1</td>
-                                <td class="column6">$2199.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-21 05:57</td>
-                                <td class="column2">200388</td>
-                                <td class="column3">Game Console Controller</td>
-                                <td class="column4">$999.00</td>
-                                <td class="column5">1</td>
-                                <td class="column6">$999.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-19 05:57</td>
-                                <td class="column2">200387</td>
-                                <td class="column3">iPhone X 64Gb Grey</td>
-                                <td class="column4">$999.00</td>
-                                <td class="column5">1</td>
-                                <td class="column6">$999.00</td>
-                            </tr>
-                            <tr>
-                                <td class="column1">2017-09-18 05:57</td>
-                                <td class="column2">200386</td>
-                                <td class="column3">iPhone X 64Gb Grey</td>
-                                <td class="column4">$999.00</td>
-                                <td class="column5">1</td>
-                                <td class="column6">$999.00</td>
-                            </tr>
-                    </tbody>
-                </table>
+    <div class="worlddata_container">
+        <div class="group__container">
+            <div class="text_container">
+                <span id="total_cases">5000</span>
+                <h2>Total Cases</h2>
             </div>
+            <img src="images/coronavirus.png" alt="Coronavirus">
+        </div>
+        <div class="group__container">
+            <div class="text_container">
+                <span id="active_cases">4000</span>
+                <h2>Active Cases</h2>
+            </div>
+            <img src="images/first-aid-kit.png" alt="Kit">
+        </div>
+        <div class="group__container">
+            <div class="text_container">
+                <span id="total_deaths">3000</span>
+                <h2>Total Deaths</h2>
+            </div>
+            <img src="images/grave.png" alt="Grave">
+        </div>
+        <div class="group__container">
+            <div class="text_container">
+                <span id="total_recovered">2000</span>
+                <h2>Total Recovered</h2>
+            </div>
+            <img src="images/recovered.png" alt="Recovered">
+        </div>
+    </div>
+    <div class="container-table1">
+        <div class="table1">
+            <table>
+                <thead>
+                    <tr class="table1-head">
+                        <th>ISO</th>
+                        <th>Country</th>
+                        <th>Total Cases</th>
+                        <th>Active Cases</th>
+                        <th>Total Deaths</th>
+                        <th>Total Recovered</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+                </tbody>
+            </table>
         </div>
     </div>
 </body>
